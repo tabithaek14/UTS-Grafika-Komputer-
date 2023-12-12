@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Animal Bites</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <a id="backg" class="nav-link">Animal Bites Dataset</a>
+    </nav>
+    <br />*3
+
+    <div class="title">
+      <h2>Animal Bites: Data on over 9,000 bites</h2>
+    </div>
+
+    <table style="margin-left: auto; margin-right: auto" class="table1">
+      <tr>
+        <td class="context" style="padding: 30px">
+          <p id="text">
+            In the United States, animal bites are often reported to law
+            enforcement (such as animal control). The main concern with an
+            animal bite is that the animal may be rabid. This dataset includes
+            information on over 9,000 animal bites which occurred near
+            Louisville, Kentucky from 1985 to 2017 and includes information on
+            whether the animal was quarantined after the bite occurred and
+            whether that animal was rabid.
+          </p>
+        </td>
+        <td style="padding: 40px">
+          <img src="src/anjing.JPG" />
+        </td>
+      </tr>
+    </table>
+    <table style="margin-left: auto; margin-right: auto">
+      <tr>
+        <td>
+          <table>
+            <tr>
+              <td>
+                <select id="input_year" class="button1">
+                  <option value="2010">2010</option>
+                  <option value="2011">2011</option>
+                  <option value="2012">2012</option>
+                  <option value="2013">2013</option>
+                  <option value="2014">2014</option>
+                  <option value="2015">2015</option>
+                  <option value="2016">2016</option>
+                  <option value="2017">2017</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button type="button" id="barchart" class="button1">
+                  <span>Bar Chart</span>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button type="button" id="linechart" class="button1">
+                  <span>Line Chart</span>
+                </button>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td>
+          <canvas id="canvas1" width="650" height="310"></canvas>
+        </td>
+        <td>
+          <table>
+            <tr>
+              <td class="angka">140</td>
+            </tr>
+            <tr>
+              <td class="angka">130</td>
+            </tr>
+            <tr>
+              <td class="angka">120</td>
+            </tr>
+            <tr>
+              <td class="angka">110</td>
+            </tr>
+            <tr>
+              <td class="angka">100</td>
+            </tr>
+            <tr>
+              <td class="angka">90</td>
+            </tr>
+            <tr>
+              <td class="angka">80</td>
+            </tr>
+            <tr>
+              <td class="angka">70</td>
+            </tr>
+            <tr>
+              <td class="angka">60</td>
+            </tr>
+            <tr>
+              <td class="angka">50</td>
+            </tr>
+            <tr>
+              <td class="angka">40</td>
+            </tr>
+            <tr>
+              <td class="angka">30</td>
+            </tr>
+            <tr>
+              <td class="angka">20</td>
+            </tr>
+            <tr>
+              <td class="angka" style="padding-bottom: 4px">10</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <table>
+            <tr>
+              <td class="month">Jan</td>
+              <td class="month">Feb</td>
+              <td class="month">Mar</td>
+              <td class="month">Apr</td>
+              <td class="month">Mei</td>
+              <td class="month">Jun</td>
+              <td class="month">Jul</td>
+              <td class="month">Aug</td>
+              <td class="month">Sep</td>
+              <td class="month">Oct</td>
+              <td class="month">Nov</td>
+              <td class="month">Des</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <table style="margin-left: auto; margin-right: auto">
+      <tr>
+        <td>
+          <canvas id="canvas2" width="170" height="320"></canvas>
+        </td>
+        <td>
+          <table>
+            <tr>
+              <td class="angka1">540</td>
+            </tr>
+            <tr>
+              <td class="angka1">480</td>
+            </tr>
+            <tr>
+              <td class="angka1">420</td>
+            </tr>
+            <tr>
+              <td class="angka1">360</td>
+            </tr>
+            <tr>
+              <td class="angka1">300</td>
+            </tr>
+            <tr>
+              <td class="angka1">240</td>
+            </tr>
+            <tr>
+              <td class="angka1">180</td>
+            </tr>
+            <tr>
+              <td class="angka1">120</td>
+            </tr>
+            <tr>
+              <td class="angka1" style="padding-bottom: 24px">60</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table>
+            <tr>
+              <td class="gender1">Male</td>
+              <td class="gender2">Female</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <div id="end"></div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
